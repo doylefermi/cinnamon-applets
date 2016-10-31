@@ -143,7 +143,7 @@ MyApplet.prototype = {
         if (this.displayExtra) {
             this.menuitem2 = new PopupMenu.PopupMenuItem("Run glxspheres64 GPU Test Program");
             this.menuitem2.connect('activate', Lang.bind(this, function (event) {
-            GLib.spawn_command_line_async('/opt/VirtualGL/bin/glxspheres64');
+            GLib.spawn_command_line_async('optirun glxspheres64');
             }));
             this._applet_context_menu.addMenuItem(this.menuitem2);
         }
